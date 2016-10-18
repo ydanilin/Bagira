@@ -1,0 +1,74 @@
+<label class="menuOverlay" for="rotator"></label>
+<div class="menu_section">
+    <div class="menu_left_pane">
+        <div class="menu_title">RGBAGIRA.RU</div>
+        <div style="height: 5%"></div>
+        <h3 class="menu_item">О клубе</h3>
+        <h3 class="menu_item">Наши достижения</h3>
+        <h3 class="menu_item">Новости</h3>
+        <h3 class="menu_item">Турниры и соревнования</h3>
+        <h3 class="menu_item">Расписание занятий</h3>
+        <h3 class="menu_item">Тренерский состав</h3>
+        <h3 class="menu_item">Контакты</h3>
+    </div>
+    <div class="menu_right_pane">
+        <input type="checkbox" id="rotator" onclick="handleClick(this);">
+        <label class="logoButton" for="rotator"></label>
+        <div class="logo" id="logo">
+            <div class="cross_above">+</div>
+            <div class="djhuj" id="djhuj">
+                {% include "Logo03.svg" %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function handleClick(cb) {
+        var ms = document.getElementsByClassName("menu_section")[0];
+        var dim = document.getElementsByClassName("menuOverlay")[0];
+        if (cb.checked) {
+            /* extend menu */
+            ms.classList.add("extend");
+            /* dim background */
+            dim.classList.add("dimmed");
+        }
+        if (!(cb.checked)) {
+            /* retract menu */
+            ms.classList.remove("extend");
+            dim.classList.remove("dimmed");
+            /* remove cross and restore bagira */
+            var cross = document.getElementsByClassName("cross_above")[0];
+            var djHuj = document.getElementById('djhuj');
+            cross.style.display = "none";
+            djHuj.style.visibility = "visible";
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    var toCross = function () {
+        var chkBox = document.getElementById("rotator");
+        if (chkBox.checked) {
+            var cross = document.getElementsByClassName("cross_above")[0];
+            var djHuj = document.getElementById('djhuj');
+            djHuj.style.visibility = "hidden";
+            cross.style.display = "block";
+        }
+    }
+    document.getElementById('logo').addEventListener("transitionend", toCross, false);
+</script>
+
+<script type="text/javascript">
+    window.onload = function (e) {
+        var logo = document.getElementsByClassName("logo")[0];
+        var menu_title = document.getElementsByClassName("menu_title")[0];
+        {# http://stackoverflow.com/questions/15733365/cross-browser-ie8-getcomputedstyle-with-javascript #}
+        var height = logo.getBoundingClientRect().bottom - logo.getBoundingClientRect().top;
+        var visotka = Math.round(height).toString() + "px";
+        var schriftt = Math.round(height / 3.5).toString() + "px";
+        menu_title.style.height = visotka;
+        menu_title.style["line-height"] = visotka;
+        menu_title.style["font-size"] = schriftt;
+    }
+</script>

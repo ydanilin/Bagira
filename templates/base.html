@@ -1,3 +1,4 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 {# simple base.html #}
 {% load staticfiles %}
 <html>
@@ -7,13 +8,22 @@
         {% block title %}Bagira rhythmic gymnastics club{% endblock title %}
     </title>
     {% block stylesheets %}
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        <link rel="stylesheet" href="{% static 'css/sidemenu.css' %}">
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}" title="default"/>
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'css/thin.css' %}" title="thin"/>
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'css/wide.css' %}" title="wide"/>
+        <link rel="alternate stylesheet" type="text/css" href="{% static 'css/wider.css' %}" title="wider"/>
     {% endblock stylesheets %}
+    <!-- JavaScript -->
+    <script src="{% static 'dynamiclayout.js' %}" type="text/javascript"></script>
 </head>
 <body>
-{% block content %}
-{% endblock content %}
+
+<div class="main_wrapper">
+    {% block content %}
+    {% endblock content %}
+</div>
+
 
 {% include "sidemenu.html" %}
 
