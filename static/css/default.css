@@ -1,3 +1,14 @@
+@font-face {
+    font-family: AnonymousPro; /* Гарнитура шрифта */
+    src: url(fonts/AnonymousPro-Regular.ttf); /* Путь к файлу со шрифтом */
+    font-family: RobotoCondensed;
+    src: url(fonts/RobotoCondensed-Light.ttf);
+    font-family: RobotoMono;
+    src: url(fonts/RobotoSlab-Regular.ttf);
+    font-family: 'PT Sans Caption';
+    src: url(fonts/PT_Sans-Caption-Web-Regular.ttf);
+}
+
 html, body {
     font-family: Avenir, Helvetica;
     margin: 0;
@@ -8,8 +19,8 @@ html {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: 100%;
-    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 1), rgba(247, 200, 255, 1));
-    background-attachment: fixed;
+    /*background-image: linear-gradient(-45deg, rgba(255, 255, 255, 1), rgba(247, 200, 255, 1));*/
+    /*background-attachment: fixed;*/
 }
 
 *, *:before, *:after {
@@ -26,9 +37,19 @@ body {
     height: 100%;
 }
 
+.gradient_back {
+    position: fixed;
+    top: 0;
+    height: 30%;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgb(103, 136, 255));
+    /*background-attachment: fixed;*/
+}
+
 /* CONTENT FOR MAIN */
 
 .main_wrapper {
+    position: relative;
     margin-left: 10%;
     height: 100%;
     width: 90%;
@@ -36,14 +57,14 @@ body {
 }
 
 .content_section {
+    /*position: absolute;*/
     min-width: 780px;
     max-width: 900px;
-    margin: 20px auto;
+    margin: 30px auto;
     /*border: 1px solid black;*/
-    background: white;
+    background: #fffbe5;
     padding: 0px 30px;
 }
-
 
 .img_wrap {
     position: relative;
@@ -65,10 +86,10 @@ body {
 .img_wrap h2 span {
     /*font-family: "Trebuchet MS", Helvetica, sans-serif;*/
     /*font-size: 30pt;*/
-    font: bold 29pt/49.4pt "Trebuchet MS", Helvetica, Sans-Serif;
+    font: bold 29pt/49.4pt RobotoCondensed, "Trebuchet MS", Helvetica, Sans-Serif;
     color: white;
     text-shadow: 1px 1px 1px #000;
-    /*letter-spacing: -1px;*/
+    letter-spacing: 1px;
     background: rgb(144, 131, 255); /* fallback color */
     background: rgba(144, 131, 255, 0.4);
     padding: 10px;
