@@ -1,12 +1,26 @@
 @font-face {
     font-family: AnonymousPro; /* Гарнитура шрифта */
     src: url(fonts/AnonymousPro-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: RobotoSlab;
+    src: url(fonts/RobotoSlab-Regular.ttf);
+}
+@font-face {
     font-family: RobotoCondensed;
     src: url(fonts/RobotoCondensed-Light.ttf);
+}
+@font-face {
     font-family: RobotoMono;
     src: url(fonts/RobotoSlab-Regular.ttf);
+}
+@font-face {
     font-family: 'PT Sans Caption';
     src: url(fonts/PT_Sans-Caption-Web-Regular.ttf);
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url(fonts/Ubuntu-Regular.ttf);
 }
 
 html, body {
@@ -86,7 +100,7 @@ body {
 .img_wrap h2 span {
     /*font-family: "Trebuchet MS", Helvetica, sans-serif;*/
     /*font-size: 30pt;*/
-    font: bold 29pt/49.4pt RobotoCondensed, "Trebuchet MS", Helvetica, Sans-Serif;
+    font: bold 29pt/49.4pt RobotoCondensed;
     color: white;
     text-shadow: 1px 1px 1px #000;
     letter-spacing: 1px;
@@ -104,7 +118,7 @@ body {
 
 .menuOverlay {
     background: black;
-    position: absolute;
+    position: fixed;
     opacity: 0;
     top: 0;
     bottom: 0;
