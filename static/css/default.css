@@ -92,7 +92,7 @@ body {
 
 .img_wrap h2 {
     position: absolute;
-    top: 15%;
+    top: 62%;
     left: 5%;
     width: 100%;
 }
@@ -100,7 +100,7 @@ body {
 .img_wrap h2 span {
     /*font-family: "Trebuchet MS", Helvetica, sans-serif;*/
     /*font-size: 30pt;*/
-    font: bold 29pt/49.4pt RobotoCondensed;
+    font: bold 23pt/43pt RobotoCondensed;
     color: white;
     text-shadow: 1px 1px 1px #000;
     letter-spacing: 1px;
