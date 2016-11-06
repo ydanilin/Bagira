@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block stylesheets %}
+    {{ block.super }}
+{% endblock stylesheets %}
+
+{% block content %}
+    {{ block.super }}
+    <div class="content_section">
+        <div class="page_caption">
+            Фотогалерея
+        </div>
+        {# row containers #}
+        {# row 1 #}
+        <div style="width: 100%; position: relative; padding: 10px 0px; color: #264592; font: 15px Ubuntu;">
+            <div style="display: inline-block; vertical-align: top; width: 33%">
+                <img src="{% static "kudrjavc.jpg" %}" border="0" alt=""
+                     style="width: 100%;"></img>
+                <div style="padding-top: 10px">Воспитанница клуба Данилина Мария
+                    с Яной Кудрявцевой, серебряной призеркой Олимпийских Игр
+                    2016
+                </div>
+            </div>
+            <div style="display: inline-block; vertical-align: top; width: 33%">
+                <img src="{% static "golovina.jpg" %}" border="0" alt=""
+                     style="width: 100%;"></img>
+                <div style="padding-top: 10px">Старший тренер Московской
+                    области Головина Т.П. вручает награду кандидату в мастера
+                    спорта
+                    Ерещенко Алесии
+                </div>
+            </div>
+            <div style="display: inline-block; vertical-align: top; width: 33%">
+                <img src="{% static "barsukovoj.jpg" %}" border="0" alt=""
+                     style="width: 100%;"></img>
+                <div style="padding-top: 10px">Ерещенко Алесия заняла III-е
+                    место в личном зачете на соревнованиях Юлии Барсуковой,
+                    январь 2016
+                </div>
+            </div>
+        </div>
+        {# row 2 #}
+        <div style="width: 100%; position: relative; padding: 10px 0px; color: #264592; font: 15px Ubuntu;">
+            <div style="display: inline-block; vertical-align: top; width: 33%">
+                <img src="{% static "kupola.jpg" %}" border="0" alt=""
+                     style="width: 100%;"></img>
+                <div style="padding-top: 10px">Призовые места воспитанниц клуба
+                    на
+                    соревнованиях &laquo;Золотые Купола&raquo;, апрель 2016
+                </div>
+            </div>
+            <div style="display: inline-block; vertical-align: top; width: 33%">
+                <img src="{% static "kostritsa.jpg" %}" border="0" alt=""
+                     style="width: 100%;"></img>
+                <div style="padding-top: 10px">Областные соревнования на кубок
+                    В.А. Кострицы,
+                    II-е место в групповом зачете. Ноябрь 2015, Орехово-Зуево.
+                </div>
+            </div>
+            <div style="display: inline-block; vertical-align: top; width: 33%">
+                <img src="{% static "danilina01.jpg" %}" border="0" alt=""
+                     style="width: 100%;"></img>
+                <div style="padding-top: 10px">Данилина Мария
+                </div>
+            </div>
+        </div>
+        {# row 3 #}
+        <div style="width: 100%; position: relative; padding: 10px 0px; color: #264592; font: 15px Ubuntu;">
+            <div style="display: inline-block; vertical-align: top; width: 50%">
+                <img src="{% static "ereschenko01.jpg" %}" border="0" alt=""
+                     style="width: 100%;"></img>
+                <div style="padding-top: 10px">Ерещенко Алесия
+                </div>
+            </div>
+            <div style="display: inline-block; vertical-align: top; width: 49%">
+                <img src="{% static "romanova01.jpg" %}" border="0" alt=""
+                     style="width: 100%;"></img>
+                <div style="padding-top: 10px">Романова Марьяна
+                </div>
+            </div>
+        </div>
+        {# row 4 #}
+        <div style="width: 100%; position: relative; padding: 10px 0px 40px 0px; color: #264592; font: 15px Ubuntu;">
+            <div style="display: inline-block; vertical-align: top; width: 33%">
+                <img src="{% static "fillipova01.jpg" %}" border="0" alt=""
+                     style="width: 100%;"></img>
+                <div style="padding-top: 10px">Филлипова Елизавета
+                </div>
+            </div>
+            <div style="display: inline-block; vertical-align: top; width: 33%">
+                <img src="{% static "danilina02.jpg" %}" border="0" alt=""
+                     style="width: 100%;"></img>
+                <div style="padding-top: 10px">Данилина Мария
+                </div>
+            </div>
+            <div style="display: inline-block; vertical-align: top; width: 33%">
+                <img src="{% static "ereschenko02.jpg" %}" border="0" alt=""
+                     style="width: 100%;"></img>
+                <div style="padding-top: 10px">Ерещенко Алесия
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

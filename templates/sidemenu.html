@@ -3,13 +3,21 @@
     <div class="menu_left_pane">
         <div class="menu_title">RGBAGIRA.RU</div>
         <div style="height: 5%"></div>
-        <h3 class="menu_item">О клубе</h3>
+        <a href="{% url 'post_list' %}">
+            <h3 class="menu_item">На главную</h3></a>
+{#        <h3 class="menu_item">О клубе</h3>#}
         <h3 class="menu_item">Наши достижения</h3>
         <h3 class="menu_item">Новости</h3>
+        <a href="{% url 'post_photos' %}">
+            <h3 class="menu_item">Фотогалерея</h3></a>
         <h3 class="menu_item">Турниры и соревнования</h3>
-        <h3 class="menu_item">Расписание занятий</h3>
-        <h3 class="menu_item">Тренерский состав</h3>
-        <h3 class="menu_item">Контакты</h3>
+        <a href="{% url 'post_schedule' %}">
+            <h3 class="menu_item">Расписание занятий</h3></a>
+        <a href="{% url 'post_coach' %}">
+            <h3 class="menu_item">Тренерский состав</h3></a>
+        <a href="{% url 'post_contacts' %}">
+            <h3 class="menu_item">Контакты</h3>
+        </a>
     </div>
     <div class="menu_right_pane">
         <input type="checkbox" id="rotator" onclick="handleClick(this);">
@@ -21,11 +29,13 @@
             </div>
         </div>
         <div style="font-size: 10px; position: fixed; color: #dedede; width: 28%; padding: 3%; bottom: 3%">
-            ДЮСШ СК "Багира"<br>
+            АНО ДЮСК "Багира"<br>
+            Отделение художественной<br>
+            гимнастики<br>
             Сергиев Посад,<br>
             Московская обл.<br>
-            +7 (916) 777-6655<br>
-            bagira@rgbagira.ru<br>
+            +7 (916) 357-8179<br>
+            bahgeer-cyse@yandex.ru
         </div>
     </div>
 </div>

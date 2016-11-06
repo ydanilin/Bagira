@@ -40,7 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main'
+    'main',
+    'contacts',
+    'schedule',
+    'coaches',
+    'photos'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -133,3 +137,11 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "media"),
     os.path.join(BASE_DIR, "scripts"),
 ]
+
+STATICFILES_FINDERS = (
+
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+
+)

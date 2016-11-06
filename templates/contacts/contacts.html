@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block stylesheets %}
+    {{ block.super }}
+{% endblock stylesheets %}
+
+{% block content %}
+    {{ block.super }}
+    <div class="content_section" style="height: 94%">
+        <div class="page_caption">
+            Контакты
+        </div>
+        <div style="color: #264592; padding: 5px 15px; font: 25px Ubuntu;">
+            АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ<br>
+            ДЕТСКО-ЮНЕШЕСКИЙ СПОРТИВНЫЙ КЛУБ &laquo;БАГИРА&raquo;
+        </div>
+        <div style="color: #264592; padding: 5px 15px; font: 25px Ubuntu;">
+            Отделение художественной гимнастики
+        </div>
+        <div style="color: #264592; padding: 35px 15px; font: 20px Ubuntu;">
+            141300, Московская область, г. Сергиев Посад, проспект
+            Красной Армии, д. 40/1<br>
+            ИНН 5042998661
+        </div>
+        <div style="color: #264592; padding: 35px 0px 0px 15px; font: 20px Ubuntu;">
+            +7 (916) 357-8179
+        </div>
+        <a href="mailto:bahgeer-cyse@yandex.ru">
+            <div style="color: #264592; padding: 0px 15px; font: 20px Ubuntu;">
+                bahgeer-cyse@yandex.ru
+            </div>
+        </a>
+        <div style="position: absolute; left: 0; bottom: 0; width: 100%; height: 15%; background: #8190ff;">
+            <div style="position: relative; height: 100%">
+                <a href="{% url 'post_coach' %}" style="color: white">
+                    <div style="position: absolute; top: 50%; transform: translateY(-50%); width: 25%; text-align: center; font: 20px Ubuntu;">
+                        Тренерский состав
+                    </div>
+                </a>
+                <a href="{% url 'post_schedule' %}" style="color: white">
+                    <div style="position: absolute; left: 25%; top: 50%; transform: translateY(-50%); width: 25%; text-align: center; font: 20px Ubuntu;">
+                        Расписание занятий
+                    </div>
+                </a>
+                <div style="color: white; position: absolute; left: 50%; top: 50%; transform: translateY(-50%); width: 25%; text-align: center; font: 20px Ubuntu;">
+                    Турниры и соревнования
+                </div>
+                <a href="{% url 'post_list' %}" style="color: white">
+                    <div style="position: absolute; left: 75%; top: 50%; transform: translateY(-50%); width: 25%; text-align: center; font: 20px Ubuntu;">
+                        На главную
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

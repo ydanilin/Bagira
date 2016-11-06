@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block stylesheets %}
+    {{ block.super }}
+{% endblock stylesheets %}
+
+{% block content %}
+    {{ block.super }}
+    <div class="content_section">
+        <div class="page_caption">
+            Расписание занятий
+        </div>
+        <div style="padding: 0px 0px 15px 5px; font: 20px Ubuntu;">
+            Место проведения: г. Сергиев Посад
+        </div>
+        <div style="left: 0; width: 100%;">
+            <div style="display: inline-block; vertical-align:top; width: 33%; color: #264592; font: 20px Ubuntu;">
+                Понедельник
+                <dl>
+                    <dt>10<sup>00</sup> &ndash; 11<sup>00</sup>&nbsp;&nbsp;&nbsp;СК &laquo;Луч&raquo;
+                    </dt>
+                    <dd>Группа начальной подготовки и учебно-тренировочная
+                        группа
+                    </dd>
+                    <dt>14<sup>00</sup> &ndash; 17<sup>30</sup>&nbsp;&nbsp;&nbsp;СК &laquo;Темп&raquo;
+                    </dt>
+                    <dd>Группа начальной подготовки и учебно-тренировочная
+                        группа
+                    </dd>
+                    <dt>17<sup>30</sup> &ndash; 19<sup>00</sup>&nbsp;&nbsp;&nbsp;СК &laquo;Темп&raquo;
+                    </dt>
+                    <dd>Спортивно-оздоровительная группа</dd>
+                </dl>
+            </div>
+            <div style="display: inline-block; vertical-align:top; width: 33%; color: #264592; font: 20px Ubuntu;">
+                Среда
+                <dl>
+                    <dt>10<sup>00</sup> &ndash; 11<sup>00</sup>&nbsp;&nbsp;&nbsp;СК &laquo;Луч&raquo;
+                    </dt>
+                    <dd>Группа начальной подготовки и учебно-тренировочная
+                        группа
+                    </dd>
+                    <dt>14<sup>00</sup> &ndash; 17<sup>30</sup>&nbsp;&nbsp;&nbsp;СК &laquo;Темп&raquo;
+                    </dt>
+                    <dd>Группа начальной подготовки и учебно-тренировочная
+                        группа
+                    </dd>
+                    <dt>17<sup>30</sup> &ndash; 19<sup>00</sup>&nbsp;&nbsp;&nbsp;СК &laquo;Темп&raquo;
+                    </dt>
+                    <dd>Спортивно-оздоровительная группа</dd>
+                </dl>
+            </div>
+            <div style="display: inline-block; vertical-align:top; width: 32%; color: #264592; font: 20px Ubuntu;">
+                Пятница
+                <dl>
+                    <dt>14<sup>00</sup> &ndash; 17<sup>30</sup>&nbsp;&nbsp;&nbsp;СК &laquo;Темп&raquo;
+                    </dt>
+                    <dd>Группа начальной подготовки и учебно-тренировочная
+                        группа
+                    </dd>
+                    <dt>17<sup>30</sup> &ndash; 19<sup>00</sup>&nbsp;&nbsp;&nbsp;СК &laquo;Темп&raquo;
+                    </dt>
+                    <dd>Спортивно-оздоровительная группа</dd>
+                </dl>
+
+            </div>
+        </div>
+        <div style="padding: 30px 0px 15px 0px; font: 20px Ubuntu;">
+            Спорткомплекс &laquo;Луч&raquo;:
+        </div>
+        <div id="map_lutch" style="left: 0; width: 80%;">
+        </div>
+        <div style="padding: 30px 0px 15px 0px; font: 20px Ubuntu;">
+            Спорткомплекс &laquo;Темп&raquo;:
+        </div>
+        <div id="map_temp" style="left: 0; width: 90%; margin-bottom: 5%;">
+        </div>
+    </div>
+    {# Map "Lutch" #}
+    <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=VPqaTYxRioABTWho_XIf5ynXQPTM0w4G&amp;width=633&amp;height=437&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&amp;id=map_lutch"></script>
+    <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=xFErziqNWKkCiPoi8VpztITEAc_iaLTb&amp;width=722&amp;height=411&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&amp;id=map_temp"></script>
+{% endblock content %}

@@ -2,22 +2,27 @@
     font-family: AnonymousPro; /* Гарнитура шрифта */
     src: url(fonts/AnonymousPro-Regular.ttf); /* Путь к файлу со шрифтом */
 }
+
 @font-face {
     font-family: RobotoSlab;
     src: url(fonts/RobotoSlab-Regular.ttf);
 }
+
 @font-face {
     font-family: RobotoCondensed;
     src: url(fonts/RobotoCondensed-Light.ttf);
 }
+
 @font-face {
     font-family: RobotoMono;
     src: url(fonts/RobotoSlab-Regular.ttf);
 }
+
 @font-face {
     font-family: 'PT Sans Caption';
     src: url(fonts/PT_Sans-Caption-Web-Regular.ttf);
 }
+
 @font-face {
     font-family: Ubuntu;
     src: url(fonts/Ubuntu-Regular.ttf);
@@ -27,6 +32,8 @@ html, body {
     font-family: Avenir, Helvetica;
     margin: 0;
 }
+
+/** {border: 1px solid}*/
 
 html {
     -webkit-box-sizing: border-box;
@@ -51,6 +58,15 @@ body {
     height: 100%;
 }
 
+a {
+    text-decoration: none
+}
+
+a :hover {
+    font-style: italic;
+    color: darkmagenta;
+}
+
 .gradient_back {
     position: fixed;
     top: 0;
@@ -71,10 +87,10 @@ body {
 }
 
 .content_section {
-    /*position: absolute;*/
+    position: relative;
     min-width: 780px;
     max-width: 900px;
-    margin: 30px auto;
+    margin: 3% auto 0px auto;
     /*border: 1px solid black;*/
     background: #fffbe5;
     padding: 0px 30px;
@@ -110,9 +126,20 @@ body {
 }
 
 .img_wrap h2 span.spacer {
-    padding:0 5px;
+    padding: 0 5px;
     background: none;
 }
+
+.page_caption {
+    padding: 10px;
+    color: dimgray;
+    font-family: 'PT Sans Caption';
+    font-size: 24pt;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+dd {margin-bottom: 1em}
 
 /* STYLES FOR SIDE MENU */
 
