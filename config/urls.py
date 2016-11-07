@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^contacts/', include('contacts.urls')),
     url(r'^schedule/', include('schedule.urls')),
     url(r'^coaches/', include('coaches.urls')),
-    url(r'^photos/', include('photos.urls'))
+    url(r'^photos/', include('photos.urls')),
+    url(r'^achievements/', include('achievements.urls')),
 ]

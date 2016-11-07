@@ -16,8 +16,10 @@ import locale
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 ENC = locale.getpreferredencoding()
-# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))).decode(ENC)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# hack by Yurick: swap to lines below
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))).decode(ENC).encode('utf-8')
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
@@ -44,7 +46,8 @@ INSTALLED_APPS = [
     'contacts',
     'schedule',
     'coaches',
-    'photos'
+    'photos',
+    'achievements'
 ]
 
 MIDDLEWARE_CLASSES = [

@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block stylesheets %}
+    {{ block.super }}
+{% endblock stylesheets %}
+
+{% block content %}
+    {{ block.super }}
+    <div class="content_section" style="padding-bottom: 40px">
+        <div class="page_caption">
+            Наши достижения
+        </div>
+        {# row container 1 #}
+        <div style="width: 100%; position: relative;">
+            <div style="display: inline-block; width: 30%; vertical-align: top">
+                <img src="{% static "ereschenko03.jpg" %}" border="0" alt=""
+                     style="width: 100%;"></img>
+            </div>
+            <div style="display: inline-block; height: 100%; vertical-align: top; color: #264592; font: 20px Ubuntu;">
+                <div style="position: absolute; top: 50%;transform: translateY(-50%);">
+                    <div><b>2016. Кандидат в мастера спорта</b> Ерещенко А.</div>
+                    <div style="margin: 5%">
+                        Сборная Московской области по
+                        групповым упражнениям.
+                        Участница Всероссийских соревнований «Надежды России» по
+                        художественной гимнастике
+                    </div>
+                </div>
+            </div>
+        </div>
+        {# row container 2 #}
+        <div style="width: 100%; position: relative;">
+            <div style="display: inline-block; height: 0; width: 65%; vertical-align: top; color: #264592; font: 20px Ubuntu;">
+                <div style="position: absolute; top: 50%; transform: translateY(-50%);">
+                    <div><b>2014. Мастер спорта</b> Гусева А.</div>
+                    <div style="margin: 5%">
+                    Участница российских межрегиональных соревнований
+                    </div>
+                </div>
+            </div>
+            <div style="display: inline-block; width: 30%; vertical-align: top; ">
+                <img src="{% static "ereschenko03.jpg" %}" border="0" alt=""
+                     style="width: 100%;"></img>
+            </div>
+        </div>
+        {# row container 3 #}
+        <div style="width: 100%; position: relative;">
+            <div style="display: inline-block; width: 30%; vertical-align: top">
+                <img src="{% static "ereschenko03.jpg" %}" border="0" alt=""
+                     style="width: 100%;"></img>
+            </div>
+            <div style="display: inline-block; height: 100%; vertical-align: top; color: #264592; font: 20px Ubuntu;">
+                <div style="position: absolute; top: 50%;transform: translateY(-50%);">
+                    <div><b>2016. I взрослый разряд</b> Кононова Е.</div>
+                    <div style="margin: 5%">
+                        Участница российских межрегиональных соревнований
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# bottom ribbon #}
+{#        <div style="position: absolute; color: white; left: 0; bottom: 0; width: 100%; height: 15%; background: #8190ff;">#}
+{#            <div style="position: relative; height: 100%">#}
+{#                <a href="{% url 'post_schedule' %}" style="color: white">#}
+{#                    <div style="position: absolute; left: 0%; top: 50%; transform: translateY(-50%); width: 25%; text-align: center; font: 20px Ubuntu;">#}
+{#                        Расписание занятий#}
+{#                    </div>#}
+{#                </a>#}
+{#                <div style="color: white; position: absolute; left: 25%; top: 50%; transform: translateY(-50%); width: 25%; text-align: center; font: 20px Ubuntu;">#}
+{#                    Турниры и соревнования#}
+{#                </div>#}
+{#                <a href="{% url 'post_contacts' %}" style="color: white">#}
+{#                    <div style="position: absolute; left: 50%; top: 50%; transform: translateY(-50%); width: 25%; text-align: center; font: 20px Ubuntu;">#}
+{#                        Контакты#}
+{#                    </div>#}
+{#                </a>#}
+{#                <a href="{% url 'post_list' %}" style="color: white">#}
+{#                    <div style="position: absolute; left: 75%; top: 50%; transform: translateY(-50%); width: 25%; text-align: center; font: 20px Ubuntu;">#}
+{#                        На главную#}
+{#                    </div>#}
+{#                </a>#}
+{#            </div>#}
+{#        </div>#}
+    </div>
+{% endblock content %}
