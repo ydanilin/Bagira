@@ -49,7 +49,7 @@ function dynamicLayout(){
 }
 
 // changeLayout is based on setActiveStyleSheet function by Paul Sowdon 
-// http://www.alistapart.com/articles/alternate/
+//
 function changeLayout(description){
    var i, a;
    for(i=0; (a = document.getElementsByTagName("link")[i]); i++){
